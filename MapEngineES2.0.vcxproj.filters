@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CircleElement.cpp" />
+    <ClCompile Include="DrawEngineOperator.cpp" />
+    <ClCompile Include="Element.cpp" />
+    <ClCompile Include="ElementLayer.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GifElement.cpp" />
+    <ClCompile Include="LineElement.cpp" />
+    <ClCompile Include="MapServerLayer.cpp" />
+    <ClCompile Include="MarkerElement.cpp" />
+    <ClCompile Include="MarkerStyle.cpp" />
+    <ClCompile Include="Style.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="triangulate.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>TinyXMl</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>TinyXMl</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>TinyXMl</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>TinyXMl</Filter>
+    </ClCompile>
+    <ClCompile Include="license.cpp">
+      <Filter>license</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatMap.cpp">
+      <Filter>Layers\Heatmap</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatMapLayer.cpp">
+      <Filter>Layers\Heatmap</Filter>
+    </ClCompile>
+    <ClCompile Include="WFSLayer.cpp">
+      <Filter>Layers\WFS</Filter>
+    </ClCompile>
+    <ClCompile Include="WFSLineFeature.cpp">
+      <Filter>Layers\WFS</Filter>
+    </ClCompile>
+    <ClCompile Include="WFSPointFeature.cpp">
+      <Filter>Layers\WFS</Filter>
+    </ClCompile>
+    <ClCompile Include="WFSPolyFeature.cpp">
+      <Filter>Layers\WFS</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcgisMapLayer.cpp">
+      <Filter>Layers\BaseMap</Filter>
+    </ClCompile>
+    <ClCompile Include="VtronMap.cpp">
+      <Filter>Layers\BaseMap</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseLayer.cpp">
+      <Filter>Layers\BaseMap</Filter>
+    </ClCompile>
+    <ClCompile Include="GifLayer.cpp">
+      <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="ClusterLayer.cpp">
+      <Filter>Layers\ClusterLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStruct.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CurlConnect.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GetUrl.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="libnsgif.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cc">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawEngine.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlWork.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="MapUrl.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_world_test.cc">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CircleElement.h" />
+    <ClInclude Include="DrawEngineOperator.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="ElementLayer.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GifElement.h" />
+    <ClInclude Include="GlobalRender.h" />
+    <ClInclude Include="LineElement.h" />
+    <ClInclude Include="MapServerLayer.h" />
+    <ClInclude Include="MarkerElement.h" />
+    <ClInclude Include="MarkerStyle.h" />
+    <ClInclude Include="mem_image.h" />
+    <ClInclude Include="ShapefileLayer.h" />
+    <ClInclude Include="ShaderData.h" />
+    <ClInclude Include="Style.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Triangulate.h" />
+    <ClInclude Include="tinyxml\tinystr.h">
+      <Filter>TinyXMl</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinyxml.h">
+      <Filter>TinyXMl</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="license.h">
+      <Filter>license</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>DepInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafxcpp.h">
+      <Filter>DepInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafxppapi.h">
+      <Filter>DepInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafxwin32.h">
+      <Filter>DepInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="CELLMath.hpp">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CELLShader.hpp">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatMap.h">
+      <Filter>Layers\Heatmap</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatMapLayer.h">
+      <Filter>Layers\Heatmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Heights.h">
+      <Filter>Layers\Heatmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Layers\Heatmap</Filter>
+    </ClInclude>
+    <ClInclude Include="WFSLayer.h">
+      <Filter>Layers\WFS</Filter>
+    </ClInclude>
+    <ClInclude Include="WFSLineFeature.h">
+      <Filter>Layers\WFS</Filter>
+    </ClInclude>
+    <ClInclude Include="WFSPointFeature.h">
+      <Filter>Layers\WFS</Filter>
+    </ClInclude>
+    <ClInclude Include="WFSPolyFeature.h">
+      <Filter>Layers\WFS</Filter>
+    </ClInclude>
+    <ClInclude Include="VtronMap.h">
+      <Filter>Layers\BaseMap</Filter>
+    </ClInclude>
+    <ClInclude Include="GifLayer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="ClusterLayer.h">
+      <Filter>Layers\ClusterLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="CELLFont.h">
+      <Filter>Layers\ClusterLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStruct.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CurlConnect.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GetUrl.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="libnsgif.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawEngine.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlWork.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlHelp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MapUrl.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="hello_world_test.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common.class.js">
+      <Filter>Win</Filter>
+    </None>
+    <None Include="common.js">
+      <Filter>Win</Filter>
+    </None>
+    <None Include="win\index_win.html">
+      <Filter>Win</Filter>
+    </None>
+    <None Include="fragment_shader_es2.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="vertex_shader_es2.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="VTRON logo.png">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="TinyXMl">
+      <UniqueIdentifier>{dbd1b844-6002-4ff7-b4cb-9ef5880cf3aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win">
+      <UniqueIdentifier>{7af4c43b-3ba5-4837-bc55-e274983bd68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{39e36bcd-d002-4d34-bcfb-58dfe19b1a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{5c5a755f-da3d-42b7-bf92-6dd3ec4a4226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="license">
+      <UniqueIdentifier>{c20833c2-8e35-49d7-9498-f236a011cbee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DepInclude">
+      <UniqueIdentifier>{a37ad3b2-4af6-4979-9e1a-29f2b59a18fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{46490f01-4bb8-4b4e-a520-b1998b33a8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers">
+      <UniqueIdentifier>{39dfc81a-9855-4b5f-97de-3c2f24418b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers\BaseMap">
+      <UniqueIdentifier>{f58a664a-a522-42ba-8288-7de203506ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers\WFS">
+      <UniqueIdentifier>{4c444767-a6bc-4917-ba4d-c804da9d02ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers\Heatmap">
+      <UniqueIdentifier>{1d9286a1-85fe-4f8e-9d59-10bcd6e5962d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layers\ClusterLayer">
+      <UniqueIdentifier>{39da9785-4072-46dc-84cc-4760a335f40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{2db3e630-e4da-430f-979e-865470eb9eeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapEngineES.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

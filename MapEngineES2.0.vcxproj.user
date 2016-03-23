@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PPAPI'">
+    <LocalDebuggerCommand>I:\Vtron_Chrome\chromium45\src\out\release\chrome.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments> --ppapi-in-process --no-sandbox  --enable-nacl --allow-file-access-files --register-pepper-plugins="I:\Vtron_Chrome\chromium45\src\out\mapengine\MapEngineES.dll;application/x-nacl" E:\chkun\nacl_sdk\nacl_sdk\vs_addin\examples\MapEngineES2.0\MapEngineES2.0\index_win.html </LocalDebuggerCommandArguments>
+    <LocalDebuggerDebuggerType>NativeOnly</LocalDebuggerDebuggerType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommand>I:\Vtron_Chrome\chromium45\src\out\Release_x64\chrome.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments> --no-sandbox --test-type --enable-nacl --allow-file-access-files --register-pepper-plugins="$(OutDir)MapEngineES.dll";application/x-nacl-vtronmapengine  "$(ProjectDir)win\index_win.html"</LocalDebuggerCommandArguments>
+    <LocalDebuggerDebuggerType>NativeOnly</LocalDebuggerDebuggerType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PPAPI'">
+    <LocalDebuggerCommand>D:\高分渲染平台高分渲染引擎\VBrowser\content_shell.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommand>I:\Vtron_Chrome\chromium45\src\out\Release_x64\chrome.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments> --no-sandbox --test-type --enable-nacl --allow-file-access-files --register-pepper-plugins="$(OutDir)MapEngineES.dll";application/x-nacl-vtronmapengine  "$(ProjectDir)win\index_win.html"</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommand>I:\Vtron_Chrome\chromium45\src\out\Release\chrome.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments> --no-sandbox --test-type --enable-nacl --allow-file-access-files --register-pepper-plugins="$(OutDir)MapEngineES.dll";application/x-nacl-vtronmapengine  "$(ProjectDir)win\index_win.html"</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommand>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments> --ppapi-in-process --no-sandbox --test-type --enable-nacl --allow-file-access-files --register-pepper-plugins="$(OutDir)MapEngineES.dll";application/x-nacl-vtronmapengine  "$(ProjectDir)win\index_win.html"</LocalDebuggerCommandArguments>
+    <LocalDebuggerDebuggerType>NativeOnly</LocalDebuggerDebuggerType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+</Project>
