@@ -1,0 +1,97 @@
+<!-- base behaviors -->
+<script src="/components/behavior/position.js"></script>
+<script src="/components/behavior/size.js"></script>
+
+<!-- MapEngineES -->
+<script type="text/javascript" src="js/common.class.js"></script>
+
+<!--
+/**
+ * MapEngineES地图组件<br>
+ * 查看标签类定义：{{#crossLink "vtron.comp.map.MapEngineES"}}点击这里{{/crossLink}}
+ * @element v-map-engine
+ */
+
+/**
+ * 组件ID
+ * @attribute id
+ * @type String
+ * @required
+ */
+ 
+/**
+ * 宽度
+ * @attribute width
+ * @type String
+ * @required
+ */
+ 
+/**
+ * 高度
+ * @attribute height
+ * @type String
+ * @required
+ */
+ 
+/**
+ * 定位方式
+ * @attribute position
+ * @type String
+ * @required
+ */
+ 
+/**
+ * left
+ * @attribute left
+ * @type String
+ * @required
+ */
+ 
+/**
+ * top
+ * @attribute top
+ * @type String
+ * @required
+ */
+ 
+/**
+ * right
+ * @attribute right
+ * @type String
+ * @required
+ */
+ 
+/**
+ * bottom
+ * @attribute bottom
+ * @type String
+ * @required
+ */
+ 
+/**
+ * 层叠次序
+ * @attribute z-index
+ * @type Number
+ * @required
+ */
+-->
+<dom-module id="v-map-engine">
+  <style>
+    :host {
+      position: absolute;
+    }
+    .map {
+      width:100%;
+      height:100%;
+    }
+  </style>
+  <template>
+    <div class="map"></div>
+    <content></content>
+  </template>
+  <script src="MapEngineES.js"></script>
+  <script src="MapEngineES-style.js"></script>
+  <script src="MapEngineES-cursor.js"></script>
+  <script src="MapEngineES-layer.js"></script>
+  <script src="MapEngineES-state.js"></script>
+</dom-module>
