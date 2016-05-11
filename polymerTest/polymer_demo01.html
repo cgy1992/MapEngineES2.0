@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Polymer Test</title>
+		<!-- 使用自家chrome浏览器 不需要导入这个填充库-->
+    	<!--<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>-->
+    	<link rel="import" href="proto-element.html">
+    	<!-- 这里就是导入了上面已经定义好的自定义组件 proto-element -->
+
+    	<link rel="import" href="picture-frame.html">
+	
+		<link rel="import" href="name-tag.html">
+		<link rel="import" href="edit-element.html">
+	</head>
+
+	<body>
+		<proto-element></proto-element><!-- 用标签的形式加载自定义组件-->
+		
+		<picture-frame>
+			<img src="img/22.jpg" width="300px" height="200px">
+			<edit-element></edit-element>
+		</picture-frame>
+
+		<name-tag owner="Scott"></name-tag>
+		
+	</body>
+
+</html>

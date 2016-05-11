@@ -1,0 +1,30 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<!-- link rel="import" 这种写法可能比较陌生，其实就是导入一个已经封装好的自定义组件，这里导入了polymer.html你可以打开看一下里面有对Polymer function的定义 -->
+
+<dom-module id="picture-frame">
+
+<template>
+	<!-- scoped CSS for this element -->
+    <style>
+      div {
+        display: inline-block;
+        background-color: #ccc;
+        border-radius: 8px;
+        padding: 4px;
+      }
+    </style>
+    <div>
+      <!-- any children are rendered here -->
+      <content></content>
+      <!--注意这里使用了content标签，子组件或者标签将被插入到这里-->
+    </div>
+</template>
+
+<script>
+  // register a new element called proto-element
+  Polymer({
+    is: "picture-frame", //is来标示组件的标签名
+  });
+</script>
+
+</dom-module>

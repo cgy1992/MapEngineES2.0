@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Polymer Test</title>
+	</head>
+	<style >
+		#mainBox{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background:#FF0099;
+		}
+	</style>
+	<body>
+<div id="mainBox">
+	 <template id="appTmpl">
+		<style >
+			.app-info {
+			  padding: 0.2em;
+			  border-bottom: 1px dotted #ddd;
+			}
+			.app-bar {
+			  display: flex;
+			  align-items: center;
+			  font-size: 14px;
+			}
+			.app-name {
+			  flex-grow: 2;
+			  margin-left: 1em;
+			}
+			.app-downbtn {
+			  text-decoration: none;
+			  padding: 0.2em 1.1em;
+			  margin-right: 1em;
+			  color: #fff;
+			  background: #5573eb;
+			}
+			.app-description {
+			  font-size: 12px;
+			}
+		</style>
+
+		<div class="app-info">
+		  <div class="app-bar">
+		    <img class="app-icon" src="" width="36" height="36"/>
+		    <div class="app-name"></div>
+		    <a class="app-downbtn" href="">下载</a>
+		  </div>
+		  <div class="app-description">
+		  <!-- 占位符,子标签会替换这里的内容 --> 
+		 	<content selector=".description"></content>
+		  </div>
+		</div>
+
+		<!--
+			继续封装JS,来实现组件的 响应的事件
+		-->
+	</template>
+
+<app-info name="百度手机助手" downurl="http://gdown.baidu.com/data/wisegame/de5074e4e28aecec/baidushoujizhushou_16783385.apk" iconurl="http://img.dayanjia.com/di/TOY7/6c2442a7d933c8950f39059ed31373f083020094.png">
+   <p class="description">百度手机助手是Android手机的权威资源平台，拥有最全最好的应用、游戏、壁纸资源，帮助您在海量资源中精准搜索、高速下载、轻松管理，万千汇聚，一触即得。海量资源：免费获取数十万款应用和游戏，更有海量独家正版壁纸，任你挑选。</p>
+</app-info>
+
+<xuyan> hello world this is web component!</xuyan>
+<!-- <div class="app"></div> -->
+<br/>
+<!-- 
+	使用Javascript 来实现 自定义标签
+-->
+<script type="text/javascript">
+	// var tmpl = document.querySelector("#appTmpl"); //找到模板代码
+	// var host = document.querySelector('.app');
+	// var root = host.createShadowRoot(); //创建shadow DOM
+	
+	// //var clone =  document.importNode(tmpl.content,true);
+	// //document.body.appendChild(clone);
+
+	// root.appendChild(tmpl.content.cloneNode(true));
+
+	var tmpl = document.querySelector('#appTmpl');
+
+	// 创建新元素的 Prototype
+	var appInfoProto = Object.create(HTMLElement.prototype);
+
+	// 自定义元素在不同的生命周期有不同的 Callback 可以使用。
+	// createdCallback 是在创建时调用的，此外还有
+	// attachedCallback（插入 DOM 时的回调）、
+	// detachedCallback（从 DOM 中移除时的回调）、
+	// attributeChangedCallback（属性改变时的回调）
+	appInfoProto.createdCallback = function() 
+	{
+	  //在此自定义标签上，创建一个shadow DOM
+	  var root = this.createShadowRoot();
+	  //拿到 标签的 属性
+	  var name = this.getAttribute('name') || '';
+	  var downUrl = this.getAttribute('downurl') || '';
+	  var iconurl = this.getAttribute('iconurl') || '';
+	  //设置模板代码中 html元素的属性
+	  tmpl.content.querySelector('.app-name').textContent = name;
+	  tmpl.content.querySelector('.app-downbtn').href = downUrl;
+	  tmpl.content.querySelector('.app-icon').src = iconurl;
+	  // 将模板插入 Shadow DOM
+	  //root.appendChild(document.importNode(tmpl.content, true));
+	  root.appendChild(tmpl.content.cloneNode(true));
+	};
+
+	// 注册自定义元素
+	var appInfo = document.registerElement('app-info', {
+	    prototype: appInfoProto
+	});
+
+</script>
+
+		<button onclick="useIt()">Use me</button>  
+		<div id="container"></div>  
+
+		<script>  
+		  function useIt() {  
+		    var content = document.querySelector('#tmpl2').content;  
+		    var span = content.querySelector('span'); 
+		    span.textContent = parseInt(span.textContent) + 1;  
+		    document.querySelector('#container').appendChild(  
+		        content.cloneNode(true));  
+		  }  
+		</script>  
+  		<!-- 客户端模板的使用 -->
+		<template id="tmpl2">  
+		  <div> 
+		   Template used:<span><label>1</label>0</span> 
+		  </div>  
+		  <script>alert('Thanks!')</script>  
+		</template>  
+</div>
+	</body>
+</html>

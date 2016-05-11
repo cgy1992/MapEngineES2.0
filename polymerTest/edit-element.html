@@ -1,0 +1,30 @@
+
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!-- 双向绑定数据 -->
+<dom-module id="edit-element">
+    <style >
+      :host{
+        display: block;
+      }
+
+    </style>
+    <template>
+        <p>
+            This is a <strong>{{owner}}</strong>'s edit-element.
+        </p>
+        <input type="text" value="{{owner::input}}" placeholder="Your name here...">
+    </template>
+
+    <script>
+        Polymer({
+            is: "edit-element",
+            properties: {
+                owner: {
+                    type: String,
+                    value: "Daniel" //默认值
+                }
+            }
+        });
+    </script>
+</dom-module>

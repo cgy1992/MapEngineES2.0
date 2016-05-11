@@ -1,0 +1,9 @@
+{
+  "name": "polymer_demo01",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "Polymer":"~1.4.0"
+  },
+  "private": true
+} 
