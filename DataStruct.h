@@ -27,7 +27,7 @@ enum enumStyleType
 };
 
 //type of layer
-enum VLayerType
+typedef enum VLayerType
 {
 	vBaseLayer = 0,
 	vHotLayer = 1,
@@ -42,7 +42,8 @@ enum VLayerType
 	vWFSLineLayer = 10,
 	vWFSPolyLayer = 11,     //add by xuyan
 	vHeatMapLayer,
-	vClusterLayer
+	vClusterLayer,
+	vPlottingLayer			//标绘图层
 }VLayerType;
 
 //地图操作方式
@@ -53,7 +54,7 @@ enum enumMapOperator
 	vDrawOperator = 2,		//画笔操作
 	vPolygonChoose = 3,		//面选
 	vMark,
-	vCircleChoose,
+	vCircleChoose,			//定义重复，这里属于enumChooseType
 	vLineChoose
 };
 
@@ -63,7 +64,7 @@ enum enumChooseType
 	vRectChoose = 1,
 	vPolyChoose,
 	vMarkChoose,
-	vNULL
+	vNULL //切片使用
 };
 
 //WFS中的 热点数据结构
